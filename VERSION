@@ -1,0 +1,77 @@
+# W2K - Webtoon to Kavita Converter
+# Package Information - COMPLETE BUNDLE
+
+VERSION=1.0
+BUILD_DATE=2025-09-25
+AUTHOR=AI Assistant + User Collaboration
+DESCRIPTION=Sistema completo per download automatico e conversione webtoon per Kavita Reader
+BUNDLE_TYPE=Complete with Webtoon-Downloader
+
+## Contenuti Pacchetto COMPLETO
+
+- w2k                    : Script principale con tutte le funzionalità
+- Webtoon-Downloader/    : Engine download completo (by Zehina)  
+- install.sh            : Script di installazione automatica COMPLETA
+- install-cron.sh       : Setup automatico monitoraggio cron (ogni 6 ore)
+- w2k-cron-example.conf : Esempi configurazione cron avanzata
+- README.md             : Documentazione completa e guida utilizzo
+- QUICKSTART.md         : Guida rapida deploy
+- VERSION               : Questo file con informazioni versione
+
+## Requisiti Sistema
+
+- Bash 4.0+
+- zip (per creazione CBZ)
+- curl (per notifiche Kavita)
+- python3 + pip3 (per Webtoon Downloader)
+
+## Installazione ZERO-DEPENDENCY
+
+1. Estrai pacchetto: unzip w2k-complete.zip
+2. Entra in directory: cd w2k-package/  
+3. Installazione automatica: ./install.sh
+4. SISTEMA PRONTO! w2k --add-series "<URL>"
+
+## Cosa fa install.sh
+
+✅ Installa Webtoon-Downloader in ~/git/Webtoon-Downloader
+✅ Installa dipendenze Python automaticamente (poetry o pip)
+✅ Installa w2k in ~/w2k/ con link globale ~/bin/w2k
+✅ Pre-configura i path automaticamente
+✅ Crea directory download ~/Downloads/webtoons/
+✅ Aggiunge ~/bin al PATH
+✅ Verifica che tutto funzioni
+
+## Funzionalità Complete
+
+✅ Download engine Webtoon-Downloader integrato
+✅ Conversione formato CBZ compatibile Kavita  
+✅ Nomi Volume consistenti (Volume 1 Chapter X, Volume 2 Chapter Y)
+✅ Database serie persistente con monitoraggio automatico
+✅ Controlli programmati ogni 6 ore via cron
+✅ Notifiche automatiche server Kavita
+✅ Gestione intelligente timestamp e lock files
+✅ Opzioni avanzate download (range capitoli, qualità, formato)
+✅ Setup guidato completo con auto-detection paths
+✅ Modalità dry-run per testing
+✅ Logging verboso per debugging
+✅ Installazione completamente automatica
+
+## Post-Installazione
+
+Sistema pronto immediatamente dopo ./install.sh
+- Webtoon-Downloader: Funzionante in ~/git/Webtoon-Downloader  
+- w2k command: Disponibile globalmente
+- Configurazione: Pre-impostata in ~/.config/w2k/
+- Downloads: Directory ~/Downloads/webtoons/ creata
+
+## Supporto
+
+- Documentazione completa: README.md
+- Guida rapida: QUICKSTART.md  
+- Guida comandi: w2k --help
+- Esempi cron: w2k-cron-example.conf
+
+---
+W2K v1.0 COMPLETE - Self-Contained Webtoon Automation System
+Includes Webtoon-Downloader engine for zero-dependency deployment
